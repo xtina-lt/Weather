@@ -1,0 +1,8 @@
+{% extends 'base.html'%}
+{%block header%}{{name | upper}}{%endblock%}
+{%block main%}
+    <button id="{{name}}">
+        {{name}}
+    </button>
+
+{%endblock%}

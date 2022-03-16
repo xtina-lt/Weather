@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👩‍💻WEATHER👩‍💻</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Elsie+Swash+Caps:wght@900&display=swap" rel="stylesheet">
+    <!-- STATIC FILES -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script type="text/javascript" defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <nav>
+        <h1 class="accent">
+            ✨🌠DOJO WEATHER🌠✨
+        </h1>
+        <a href="/norfolk">
+            Norfolk
+        </a>
+    </nav>
+    <header>
+        <h2 class="accent">
+            ✨🌠{%block header%} {%endblock%}🌠✨
+        </h2>
+    </header>
+    <main id="output">
+        {%block main%} {%endblock%}
+    </main>
+</body>
+</html>
